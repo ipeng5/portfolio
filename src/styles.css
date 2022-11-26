@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 h3 {
-  @apply font-title text-4xl mb-20;
+  @apply font-title text-4xl mb-20 uppercase;
 }
 
 h4 {
@@ -29,7 +29,7 @@ h4 {
 }
 
 .project-preview {
-  @apply col-start-1 col-end-8 row-start-1 border-text-100 border-y-4 border-l-4 border-r-8;
+  @apply col-start-1 col-end-8 row-start-1 border-text-100 border-y-4 border-l-4 border-r-[12px];
 }
 
 .project-info {
@@ -37,11 +37,11 @@ h4 {
 }
 
 .project-description {
-  @apply w-full bg-black opacity-70 py-4 px-8 flex flex-col gap-6;
+  @apply w-full bg-black opacity-80 py-4 px-8 flex flex-col gap-6;
 }
 
 .tools {
-  @apply flex gap-2 justify-end;
+  @apply flex gap-4 justify-end;
 }
 
 .tools span {
@@ -53,7 +53,7 @@ h4 {
 }
 
 .btn {
-  @apply flex items-center gap-2;
+  @apply flex items-center gap-2 text-text-200;
 }
 
 .input {
