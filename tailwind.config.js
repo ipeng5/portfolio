@@ -3,6 +3,7 @@ module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
     extend: {
+      prefix: 'tw-',
       colors: {
         bg: {
           100: '#242424',
@@ -20,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };

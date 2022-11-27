@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -11,13 +11,15 @@
   <title>Ian Peng | Front-end Developer</title>
 </head>
 
-<body class="relative bg-bg-100 font-body text-white leading-10 text-xl flex flex-col items-center">
+<body
+  class="relative bg-bg-100 font-body text-white leading-10 text-xl flex flex-col items-center overscroll-y-none scrollbar scrollbar-thin scrollbar-thumb-text-300 scrollbar-track-bg-200">
 
-  <div class="flex pt-4 pl-6 pr-16 w-full justify-between items-center fixed bg-bg-100 opacity-90">
+  <div id="navbar"
+    class="flex pt-4 pl-6 pr-16 w-full justify-between items-center fixed duration-300 bg-bg-100 opacity-80 z-10">
     <img src="assets/logo.png" alt="logo" class="w-16">
     <nav class="text-text-200">
-      <ul class="flex justify-end gap-24 font-title text-2xl uppercase">
-        <li><a href=" #about">About</a></li>
+      <ul class="flex justify-end gap-24 font-title text-2xl uppercase ">
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -25,17 +27,20 @@
   </div>
 
   <main>
-    <section class="h-screen flex flex-col justify-center items-center  gap-7">
+
+    <section class="h-screen flex flex-col justify-center items-center gap-10">
       <h1 class="text-8xl uppercase font-title font-light">
         Ian Peng</h1>
-      <h2 class=" text-7xl uppercase font-title font-medium">Front-end Developer</h2>
-      <svg class="w-20 mt-10 opacity-60" fill="none" stroke="#769DFE" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
+      <h2 class="text-7xl uppercase font-title font-medium">Front-end Developer</h2>
+      <a href=" #about" class="translate-y-48">
+        <svg class="w-20 opacity-60 animate-bounce" fill="none" stroke="#769DFE" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </a>
     </section>
 
-    <section class="section">
+    <section class="section" id="about">
       <h3>#About</h3>
       <div class="flex gap-8 items-center justify-between">
         <div class="max-w-lg">
@@ -59,7 +64,7 @@
           <div class="skill-column">
             <div class="skill-card">
               <img src="assets/html.png" alt="html" class="w-12">
-              <span>Framer Motion</span>
+              <span>HTML</span>
             </div>
             <div class="skill-card">
               <img src="assets/js.png" alt="js" class="w-12">
@@ -73,12 +78,12 @@
 
           <div class="skill-column">
             <div class="skill-card">
-              <img src="assets/css.png" alt="css" class="w-12">
-              <span>CSS</span>
-            </div>
-            <div class="skill-card">
               <img src="assets/react.png" alt="react" class="w-12">
               <span>React</span>
+            </div>
+            <div class="skill-card">
+              <img src="assets/css.png" alt="css" class="w-12">
+              <span>CSS</span>
             </div>
             <div class="skill-card">
               <img src="assets/git.png" alt="git" class="w-12">
@@ -110,7 +115,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="projects">
       <h3>#Projects</h3>
 
       <div>
@@ -148,14 +153,14 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="contact">
       <h3>#Contact</h3>
       <div class="flex gap-6">
         <div>
           <p class="mb-10">Have a question or want to work together? Leave your details and I'll get back to you
             as soon
             as
-            possible.
+            possible!
           </p>
           <div class="flex gap-10">
             <a href="">
@@ -179,10 +184,11 @@
             </a>
           </div>
         </div>
-        <form class="flex flex-col gap-4 w-2/3">
-          <input class="input" type="text" placeholder="Name" required>
-          <input class="input" type="email" placeholder="Email" required>
-          <textarea class="input resize-none" cols="20" rows="3" placeholder="Message" required></textarea>
+        <form class="flex flex-col gap-4 w-2/3" action="https://formspree.io/f/xrgdvyop" method="POST">
+          <input class="input" type="text" name="name" placeholder="Name" required>
+          <input class="input" type="email" name="email" placeholder="Email" required>
+          <textarea class="input resize-none" cols="20" rows="3" name="message" placeholder="Message"
+            required></textarea>
           <button type="submit" class="btn w-full justify-end"><span>Send</span><svg class="w-6 h-6" fill="none"
               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
@@ -192,8 +198,8 @@
       </div>
     </section>
   </main>
+  <footer class="uppercase mb-2 text-text-200">&#169;&nbsp;2022&nbsp;&nbsp;Ian Peng</footer>
 </body>
 
-<footer class="uppercase mb-2 text-text-200">&#169;&nbsp;2022&nbsp;&nbsp;Ian Peng</footer>
 
 </html>

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ipeng5/portfolio#readme",
   "dependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^2.0.1"
   }
 }
