@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ['./public/**/*.{html,js}'],
   theme: {
     extend: {
@@ -16,8 +17,25 @@ module.exports = {
         },
       },
       fontFamily: {
-        body: ['Open sans', 'sans-serif'],
+        body: ['Montserrat', 'sans-serif'],
         title: ['Sora', 'sans-serif'],
+      },
+      keyframes: {
+        moveInLeft: {
+          '0%': { transform: 'translateX(-100px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '100' },
+        },
+        moveInRight: {
+          '0%': { transform: 'translateX(100px)', opacity: '0' },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '100',
+          },
+        },
+      },
+      animation: {
+        moveInLeft: 'moveInLeft 1s ease-in-out',
+        moveInRight: 'moveInRight 1.5s ease-in-out',
       },
     },
   },
