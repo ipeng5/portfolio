@@ -22,33 +22,41 @@ window.onscroll = function () {
 const projects = [
   {
     img: 'assets/shop.png',
-    name: 'Me Fashion E-commer Page',
-    info: 'This project is..',
-    tools: 'React, Sass',
+    name: 'Me Fashion',
+    info: `Me Fashion is an e-commerce shopping website that allows users to browser products, filter by category <br>and order / remove products`,
+    tools: 'Built with: React, Sass, and Framer Motion',
     github: 'https://github.com/ipeng5/me-fashion',
     live: 'https://ipeng5.github.io/me-fashion',
   },
   {
     img: 'assets/todo.png',
-    name: 'Todo List App',
-    info: 'This project is..',
-    tools: 'HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;Sass',
+    name: 'todo',
+    info: 'A CRUD todo list app that lets users easily organize their projects and tasks. Available also in dark mode.',
+    tools: 'Built with: JavaScript, Sass and HTML',
     github: 'https://github.com/ipeng5/todo',
-    live: 'https://ipeng5.github.io/todo',
+    live: 'https://todo-list-today.netlify.app/',
+  },
+  {
+    img: 'assets/cv.png',
+    name: 'CV Builder',
+    info: 'A CV Builder that allows users to create their own resume and download it. Personalize with 3 color themes.',
+    tools: 'Built with: React, CSS and HTML',
+    github: 'https://github.com/ipeng5/cv-application',
+    live: 'https://ipeng5.github.io/cv-application/',
   },
   {
     img: 'assets/weather.png',
-    name: 'My Sky Weather App',
-    info: 'This project is..',
-    tools: 'HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;Sass',
+    name: 'My Sky',
+    info: 'My Sky is a weather forecast site using OpenWeatherMap API to provide users with information based on their location or search results.',
+    tools: 'Built with: JavaScript, Sass and HTML',
     github: 'https://github.com/ipeng5/my-sky',
     live: 'https://mysky.netlify.app/',
   },
   {
     img: 'assets/etch.png',
-    name: 'Pixel Art Maker',
-    info: 'This project is..',
-    tools: 'HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;Sass',
+    name: 'Etch A Sketch',
+    info: 'A simple and fun pixel sketch app with a variety of drawing tools.',
+    tools: 'Built with: JavaScript, CSS and HTML',
     github: 'https://github.com/ipeng5/etch-a-sketch',
     live: 'https://ipeng5.github.io/etch-a-sketch',
   },
@@ -66,9 +74,9 @@ function generateMarkUp(p) {
           <a class="img-box overflow-hidden cursor-pointer bg-black opacity-60 hover:opacity-95 transition duration-1000"  href="${p.live}" target="_blank" rel="noreferrer"><img src="${p.img}" alt="screenshot" class="hover:scale-105 transition duration-1000"></a>
           <div class="project-info">
             <h4>${p.name}</h4>
-            <div class="bg-[#151515] opacity-95 py-4 px-8 flex flex-col gap-6">
+            <div class="bg-[#151515] opacity-95 p-8 flex flex-col gap-6">
               <p>${p.info}</p>
-              <p class="tools">${p.tools}</p>
+              <p class="tools italic">${p.tools}</p>
             </div>
             <ul class="project-links">
               <li>

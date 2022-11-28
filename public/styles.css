@@ -754,14 +754,8 @@ video {
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.p-8{
+  padding: 2rem;
 }
 
 .pt-4{
@@ -825,6 +819,10 @@ video {
   text-transform: uppercase;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .leading-10{
   line-height: 2.5rem;
 }
@@ -849,6 +847,10 @@ video {
 
 .opacity-95{
   opacity: 0.95;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition{
