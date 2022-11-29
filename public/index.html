@@ -13,12 +13,12 @@
 </head>
 
 <body
-  class="relative font-body bg-bg-100 text-white leading-normal md:leading-relaxed text-sm sm:text-md md:text-lg xl:text-xl flex flex-col items-center overscroll-y-none scrollbar-thin scrollbar-thumb-text-300 scrollbar-track-bg-200 selection:bg-text-300 selection:text-white">
+  class="relative font-body overflow-x-hidden bg-bg-100 text-white text-sm sm:text-base md:text-lg xl:text-xl flex flex-col items-center overscroll-y-none scrollbar-thin scrollbar-thumb-text-300 scrollbar-track-bg-200 selection:bg-text-300 selection:text-white">
   <div id="navbar"
     class="flex flex-col sm:flex-row pl-6 pr-6 sm:pr-10 lg:pr-16 w-full sm:justify-between items-center fixed bg-bg-100 sm:opacity-70 z-20">
 
     <div class="flex justify-between w-screen p-4 sm:w-auto bg-bg-100">
-      <img src="assets/logo.png" alt="logo" class="w-8 h-8 lg:w-10 lg:h-10 xl:w-16 xl:h-16">
+      <a href="#"><img src="assets/logo.png" alt="logo" class="w-8 h-8 lg:w-10 lg:h-10 xl:w-16 xl:h-16"></a>
       <button class="menu sm:hidden relative w-6 h-6 mr-2" id="menu">
         <div
           class="bg-text-200 absolute  h-0.5 w-6 rounded  transition-all duration-300 before:absolute before:h-0.5 before:w-6 before:-translate-x-3 before:-translate-y-2 before:rounded before:bg-text-200 before:transition-all before:duration-300 before:content-[''] after:absolute after:h-0.5 after:w-6 after:-translate-x-3 after:translate-y-2 after:rounded after:bg-text-200 after:transition-all after:duration-300 after:content-['']">
@@ -54,11 +54,12 @@
     <section class="section" id="about">
       <h3 class="mb-10 lg:mb-16 hidden-y fade-in">#About</h3>
 
-      <div class="flex flex-col lg:flex-row gap-16 lg:gap-4 xl:gap-8 items-center justify-between hidden-y fade-in">
-        <div class="lg:max-w-xl">
+      <div
+        class="flex flex-col lg:flex-row gap-10 sm:gap-16 lg:gap-4 xl:gap-8 items-center justify-between hidden-y fade-in">
+        <div class="lg:max-w-xl leading-normal md:leading-relaxed xl:leading-8">
           <div>
-            <p class="mb-7">
-              I am Ian Peng, a
+            <p class="mb-4 md:mb-7 ">
+              Hi! I'm Ian, a
               former product marketer turned self-taught frontend developer.
               While
               I’ve
@@ -76,7 +77,8 @@
             </p>
           </div>
         </div>
-        <div class="flex text-sm md:text-base text-center items-center gap-2 md:gap-4 lg:gap-2 xl:gap-4">
+        <div
+          class="flex text-[10px] sm:text-xs md:text-sm lg:text-base text-center items-center gap-2 md:gap-4 lg:gap-2 xl:gap-4">
           <div class="skill-column">
             <div class="skill-card hidden-z fade-in">
               <img src="assets/html.png" alt="html" class="w-8 md:w-12">
@@ -130,14 +132,16 @@
     </section>
 
     <section class="section" id="projects">
-      <h3 class="mb-16 lg:mb-28 hidden-y fade-in">#Projects</h3>
-      <div class="project-container flex flex-col gap-32 lg:gap-48 xl:gap-64" id="project-container">
+      <h3 class="mb-10 md:mb-16 lg:mb-28 hidden-y fade-in">#Projects</h3>
+      <div class="project-container flex flex-col gap-20 sm:gap-28 md:gap-36 lg:gap-48 xl:gap-64"
+        id="project-container">
       </div>
     </section>
 
     <section class="section" id="contact">
-      <h3 class="mb-16 lg:mb-24 hidden-y fade-in">#Contact</h3>
-      <div class="flex flex-col lg:flex-row gap-16 lg:gap-6 hidden-y fade-in">
+      <h3 class="mb-14 md:mb-16 lg:mb-24 hidden-y fade-in">#Contact</h3>
+      <div
+        class="flex flex-col lg:flex-row gap-16 lg:gap-6 hidden-y fade-in leading-normal md:leading-relaxed xl:leading-8">
         <div>
           <p class="mb-10">Have a question or want to work together? Leave your details and I'll get back to you
             as soon
@@ -180,7 +184,8 @@
       </div>
     </section>
   </main>
-  <footer class="uppercase mb-2 text-text-200">&#169;&nbsp;2022&nbsp;&nbsp;Ian Peng</footer>
+  <footer class="uppercase mt-10 mb-2 text-text-200 text-[10px] sm:text-sm md:text-base xl:text-lg">
+    &#169;&nbsp;2022&nbsp;&nbsp;Ian Peng</footer>
 
 </body>
 

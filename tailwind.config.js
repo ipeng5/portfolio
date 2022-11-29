@@ -38,7 +38,7 @@ module.exports = {
         moveInRight: 'moveInRight 1.5s ease-in-out',
       },
       screens: {
-        xs: '460px',
+        xs: '380px',
       },
     },
   },

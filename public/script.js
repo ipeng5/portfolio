@@ -41,7 +41,7 @@ const projects = [
   {
     img: 'assets/shop.png',
     name: 'Me Fashion',
-    info: `Me Fashion is an e-commerce shopping website that allows users to browse and order products`,
+    info: `Me Fashion is an e-commerce shopping website that allows users to browse and order products.`,
     tools: 'Built with: React, Sass, and Framer Motion',
     github: 'https://github.com/ipeng5/me-fashion',
     live: 'https://ipeng5.github.io/me-fashion',
@@ -57,7 +57,7 @@ const projects = [
   {
     img: 'assets/cv.png',
     name: 'CV Builder',
-    info: 'A CV Builder that allows users to create their own resume and download it. Personalize with 3 color themes.',
+    info: 'A CV Builder that allows users to create their own resume and download it. 3 color themes available.',
     tools: 'Built with: React, CSS and HTML',
     github: 'https://github.com/ipeng5/cv-application',
     live: 'https://ipeng5.github.io/cv-application/',
@@ -65,7 +65,7 @@ const projects = [
   {
     img: 'assets/weather.png',
     name: 'My Sky',
-    info: 'My Sky is a weather forecast site using OpenWeatherMap API to provide users with information based on their location or search results.',
+    info: 'My Sky is a weather forecast site that provides users with information based on their location or search results.',
     tools: 'Built with: JavaScript, Sass and HTML',
     github: 'https://github.com/ipeng5/my-sky',
     live: 'https://mysky.netlify.app/',
@@ -130,7 +130,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.2,
 });
 
 allHidden.forEach(el => {
