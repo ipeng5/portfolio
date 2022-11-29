@@ -11,7 +11,7 @@ const navWrapper = document.querySelector('#nav-wrapper');
 
 const handleToggleNav = () => {
   navWrapper.classList.toggle('top-[60px]');
-  navWrapper.classList.toggle('top-[-100px]');
+  navWrapper.classList.toggle('top-[-105px]');
   menu.classList.toggle('toggle-btn');
 };
 menu.addEventListener('click', handleToggleNav);
@@ -28,7 +28,7 @@ window.onscroll = function () {
     }
   } else {
     if (prevScrollPos !== currentScrollPos) {
-      navWrapper.classList.add('top-[-100px]');
+      navWrapper.classList.add('top-[-105px]');
       navWrapper.classList.remove('top-[60px]');
       menu.classList.remove('toggle-btn');
     }
@@ -92,7 +92,7 @@ function generateMarkUp(p) {
           <a class="img-box overflow-hidden cursor-pointer bg-black opacity-60 hover:opacity-95 transition duration-1000"  href="${p.live}" target="_blank" rel="noreferrer"><img src="${p.img}" alt="screenshot" class="hover:scale-105 transition duration-1000"></a>
           <div class="project-info">
             <h4>${p.name}</h4>
-            <div class="bg-[#151515] opacity-95 p-8 flex flex-col gap-6">
+            <div class="bg-[#151515] opacity-95 px-4 py-6 md:p-8 flex flex-col gap-6">
               <p>${p.info}</p>
               <p class="tools italic">${p.tools}</p>
             </div>

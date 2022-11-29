@@ -27,7 +27,7 @@ h4 {
 }
 
 .skill-card {
-  @apply flex flex-col justify-center items-center gap-2 xl:gap-4 bg-bg-200 w-[72px] h-20 sm:w-36 sm:h-[90px] md:w-48 lg:w-32 xl:w-48 lg:h-24 xl:h-32 rounded-md;
+  @apply flex flex-col justify-center items-center gap-2 xl:gap-4 bg-bg-200 w-[74px] h-20 sm:w-36 sm:h-[90px] md:w-48 lg:w-32 xl:w-48 lg:h-24 xl:h-32 rounded-md;
 }
 
 .project-wrapper {
