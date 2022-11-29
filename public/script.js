@@ -1,7 +1,7 @@
 // Show the arrow 2s after page load
 window.onload = function () {
   setTimeout(function () {
-    arrow.classList.remove('hidden-arrow');
+    arrow.classList.remove('opacity-0');
   }, 1500);
 };
 

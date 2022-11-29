@@ -79,10 +79,6 @@ h4 {
   placeholder:text-xs placeholder:sm:text-sm placeholder:md:text-base placeholder:xl:text-lg;
 }
 
-.input:focus {
-  @apply border-text-100;
-}
-
 .hidden-y,
 .hidden-z {
   @apply transition-all duration-1000;
@@ -94,16 +90,4 @@ h4 {
 
 .hidden-z--hidden {
   @apply opacity-0 scale-0;
-}
-
-.hidden-arrow {
-  @apply opacity-0;
-}
-
-.nav-link {
-  @apply hover:text-text-100 transition duration-200;
-}
-
-.contact-link {
-  @apply hover:scale-110 transition duration-200;
 }
