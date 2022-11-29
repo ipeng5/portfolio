@@ -37,6 +37,9 @@ module.exports = {
         moveInLeft: 'moveInLeft 1s ease-in-out',
         moveInRight: 'moveInRight 1.5s ease-in-out',
       },
+      screens: {
+        xs: '460px',
+      },
     },
   },
   plugins: [require('tailwind-scrollbar')],

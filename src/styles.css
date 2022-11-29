@@ -4,60 +4,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-[135deg] [&>div::after]:translate-y-0 [&>div::after]:rotate-[-135deg] [&>div]:bg-transparent;
+  }
+}
+
 h3 {
-  @apply font-title text-4xl pt-20 uppercase;
+  @apply font-title text-2xl lg:text-4xl pt-16 xl:pt-20 uppercase;
 }
 
 h4 {
-  @apply text-3xl mb-8 font-title text-text-100;
+  @apply font-title text-xl md:text-3xl mb-4 md:mb-8 md:text-text-100 uppercase;
 }
 
 .section {
-  @apply mb-48  max-w-7xl;
+  @apply mb-24 md:mb-32 lg:mb-48 px-20 max-w-full md:px-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl;
 }
 
 .skill-column {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-2 md:gap-4 lg:gap-2 xl:gap-4;
 }
 
 .skill-card {
-  @apply flex flex-col justify-center items-center gap-4 bg-bg-200 w-48 h-32 rounded-md;
+  @apply flex flex-col justify-center items-center gap-2 xl:gap-4 bg-bg-200 w-24 sm:w-36 h-20 sm:h-28 md:w-48  lg:w-32 xl:w-48 lg:h-24 xl:h-32 rounded-md;
 }
 
 .project-wrapper {
-  @apply grid grid-cols-12;
+  @apply flex flex-col gap-10 md:grid grid-cols-12;
 }
 
 .project-wrapper:nth-child(odd) .img-box {
-  @apply col-start-1 col-end-8 row-start-1 border-text-100 border-t-4 border-b-[12px] border-l-4 border-r-[12px];
+  @apply col-start-1 col-end-9 lg:col-end-8 row-start-1 border-text-100 border-t-4 border-b-[12px] border-l-4 border-r-[12px];
 }
 
 .project-wrapper:nth-child(odd) .project-info {
-  @apply col-start-7 col-end-13 row-start-1 text-right;
-}
-
-.project-wrapper:nth-child(odd) .tools {
-  @apply flex gap-4 justify-end;
+  @apply col-start-4 lg:col-start-6 xl:col-start-7 col-end-13 row-start-2 md:row-start-1 md:text-right relative;
 }
 
 .project-wrapper:nth-child(odd) .project-links {
-  @apply flex justify-end gap-8 pt-6;
+  @apply flex justify-end gap-4 md:gap-8 pt-2 sm:pt-6 static sm:absolute -top-6 right-2 md:static;
 }
 
 .project-wrapper:nth-child(even) .img-box {
-  @apply col-start-6 col-end-13 row-start-1 border-text-100 border-t-4 border-b-[12px] border-r-4 border-l-[12px];
+  @apply col-start-5 lg:col-start-6 col-end-13 row-start-1 border-text-100 border-t-4 border-b-[12px] border-r-4 border-l-[12px];
 }
 
 .project-wrapper:nth-child(even) .project-info {
-  @apply col-start-1 col-end-7 row-start-1;
-}
-
-.project-wrapper:nth-child(even) .tools {
-  @apply flex gap-4;
+  @apply col-start-1 col-end-10 lg:col-end-8 xl:col-end-7 row-start-1 relative;
 }
 
 .project-wrapper:nth-child(even) .project-links {
-  @apply flex  gap-8 pt-6;
+  @apply flex gap-8 pt-2 sm:pt-6 justify-end md:justify-start static sm:absolute -top-6 right-2 md:static;
 }
 
 .btn {
@@ -73,11 +71,11 @@ h4 {
 }
 
 .btn svg {
-  @apply fill-white scale-110 transition duration-300;
+  @apply fill-text-200 scale-110 transition duration-300;
 }
 
 .input {
-  @apply bg-transparent border-text-300 border-2 p-2 outline-none text-lg text-text-200;
+  @apply bg-transparent border-text-300 border-2 p-2 outline-none text-sm sm:text-md md:text-lg text-text-200 placeholder:text-sm;
 }
 
 .input:focus {

@@ -1,29 +1,47 @@
-// show the arrow 2s after page load
+// Show the arrow 2s after page load
 window.onload = function () {
   setTimeout(function () {
     arrow.classList.remove('hidden-arrow');
   }, 1500);
 };
 
-// hide and show nav bar on scroll
+// Navbar animation
+const menu = document.querySelector('#menu');
+const navWrapper = document.querySelector('#nav-wrapper');
+
+const handleToggleNav = () => {
+  navWrapper.classList.toggle('top-[60px]');
+  navWrapper.classList.toggle('top-[-100px]');
+  menu.classList.toggle('toggle-btn');
+};
+menu.addEventListener('click', handleToggleNav);
+
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
   const navbar = document.querySelector('#navbar');
   const currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = '0';
+  if (window.screen.availWidth > 580) {
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.top = '0';
+    } else {
+      navbar.style.top = '-80px';
+    }
   } else {
-    navbar.style.top = '-100px';
+    if (prevScrollPos !== currentScrollPos) {
+      navWrapper.classList.add('top-[-100px]');
+      navWrapper.classList.remove('top-[60px]');
+      menu.classList.remove('toggle-btn');
+    }
   }
   prevScrollPos = currentScrollPos;
 };
 
-//project data
+// Project data
 const projects = [
   {
     img: 'assets/shop.png',
     name: 'Me Fashion',
-    info: `Me Fashion is an e-commerce shopping website that allows users to browser products, filter by category <br>and order / remove products`,
+    info: `Me Fashion is an e-commerce shopping website that allows users to browse and order products`,
     tools: 'Built with: React, Sass, and Framer Motion',
     github: 'https://github.com/ipeng5/me-fashion',
     live: 'https://ipeng5.github.io/me-fashion',
@@ -31,7 +49,7 @@ const projects = [
   {
     img: 'assets/todo.png',
     name: 'todo',
-    info: 'A CRUD todo list app that lets users easily organize their projects and tasks. Available also in dark mode.',
+    info: 'A todo list app that lets users easily organize their projects and tasks. Available also in dark mode.',
     tools: 'Built with: JavaScript, Sass and HTML',
     github: 'https://github.com/ipeng5/todo',
     live: 'https://todo-list-today.netlify.app/',
@@ -62,7 +80,7 @@ const projects = [
   },
 ];
 
-// render projects
+// Render projects
 const renderProjects = (() => {
   const container = document.querySelector('#project-container');
   projects.map(p => container.insertAdjacentHTML('beforeend', generateMarkUp(p)));
@@ -96,7 +114,7 @@ function generateMarkUp(p) {
   `;
 }
 
-// animations on scroll
+// Section animations on scroll
 const allHidden = document.querySelectorAll('.fade-in');
 
 const revealSection = function (entries, observer) {
