@@ -584,6 +584,10 @@ video {
   top: -105px;
 }
 
+.top-\[-101px\]{
+  top: -101px;
+}
+
 .z-20{
   z-index: 20;
 }
@@ -820,6 +824,10 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-4{
@@ -1183,14 +1191,14 @@ h4{
 
 @media (min-width: 1024px){
   .skill-card{
-    height: 6rem;
+    height: 5rem;
     width: 8rem;
   }
 }
 
 @media (min-width: 1280px){
   .skill-card{
-    height: 8rem;
+    height: 7rem;
     width: 12rem;
     gap: 1rem;
   }
@@ -1779,6 +1787,14 @@ h4{
     width: 3rem;
   }
 
+  .md\:w-8{
+    width: 2rem;
+  }
+
+  .md\:w-9{
+    width: 2.25rem;
+  }
+
   .md\:gap-4{
     gap: 1rem;
   }
@@ -1836,6 +1852,10 @@ h4{
     width: 4rem;
   }
 
+  .lg\:w-8{
+    width: 2rem;
+  }
+
   .lg\:w-2\/3{
     width: 66.666667%;
   }
@@ -1891,6 +1911,10 @@ h4{
     width: 5rem;
   }
 
+  .xl\:w-9{
+    width: 2.25rem;
+  }
+
   .xl\:gap-8{
     gap: 2rem;
   }
@@ -1916,6 +1940,11 @@ h4{
   .xl\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .xl\:text-lg{
