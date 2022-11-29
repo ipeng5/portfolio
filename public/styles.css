@@ -886,6 +886,11 @@ video {
   font-size: 10px;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1692,6 +1697,13 @@ h4{
 
 .hover\:opacity-95:hover{
   opacity: 0.95;
+}
+
+@media (min-width: 380px){
+  .xs\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 640px){
