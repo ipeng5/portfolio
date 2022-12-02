@@ -1,3 +1,5 @@
+'use strict';
+
 // Show the arrow 2s after page load
 window.onload = function () {
   setTimeout(function () {
