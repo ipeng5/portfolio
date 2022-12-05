@@ -100,12 +100,12 @@ function generateMarkUp(p) {
             </div>
             <ul class="project-links">
               <li>
-                <a class="btn" href="${p.live}" target="_blank" rel="noreferrer"><span>Live Site</span>
+                <a class="btn" href="${p.live}" target="_blank" rel="noreferrer"><span class="pointer-events-auto">Live Site</span>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 17.65 5.35 16.6l9.85-9.85H6.25v-1.5h11.5v11.5h-1.5V7.8Z"/></svg>
                 </a>
               </li>
               <li>
-                <a class="btn" href="${p.github}" target="_blank" rel="noreferrer"><span>Github</span>
+                <a class="btn" href="${p.github}" target="_blank" rel="noreferrer"><span class="pointer-events-auto">Github</span>
 
                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.4 17.65 5.35 16.6l9.85-9.85H6.25v-1.5h11.5v11.5h-1.5V7.8Z"/></svg>
                 </a>
