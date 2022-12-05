@@ -140,3 +140,7 @@ allHidden.forEach(el => {
   if (el.classList.contains('hidden-y')) el.classList.add('hidden-y--hidden');
   else el.classList.add('hidden-z--hidden');
 });
+
+// Footer
+const footer = document.querySelector('footer');
+footer.innerHTML = `&#169;&nbsp;${new Date().getFullYear()}&nbsp;&nbsp;Ian Peng`;
