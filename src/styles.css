@@ -36,7 +36,7 @@
   }
 
   .project-wrapper:nth-child(odd) .project-info {
-    @apply col-start-4 lg:col-start-6 xl:col-start-7 col-end-13 row-start-2 md:row-start-1 md:text-right relative;
+    @apply col-start-4 lg:col-start-6 xl:col-start-7 col-end-13 row-start-2 md:row-start-1 md:text-right relative pointer-events-none;
   }
 
   .project-wrapper:nth-child(odd) .project-links {
@@ -48,7 +48,7 @@
   }
 
   .project-wrapper:nth-child(even) .project-info {
-    @apply col-start-1 col-end-10 lg:col-end-8 xl:col-end-7 row-start-1 relative;
+    @apply col-start-1 col-end-10 lg:col-end-8 xl:col-end-7 row-start-1 relative pointer-events-none;
   }
 
   .project-wrapper:nth-child(even) .project-links {
