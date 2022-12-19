@@ -79,7 +79,7 @@
 
 @layer utilities {
   .toggle-btn {
-    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-[135deg] [&>div::after]:translate-y-0 [&>div::after]:rotate-[-135deg] [&>div]:bg-transparent;
+    @apply [&>span::before]:translate-y-0 [&>span::before]:rotate-[135deg] [&>span::after]:translate-y-0 [&>span::after]:rotate-[-135deg] [&>span]:bg-transparent;
   }
 
   .hidden-y,

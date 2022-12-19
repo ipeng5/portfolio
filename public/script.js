@@ -72,20 +72,14 @@ const projects = [
     github: 'https://github.com/ipeng5/my-sky',
     live: 'https://mysky.netlify.app/',
   },
-  {
-    img: 'assets/etch.png',
-    name: 'Etch A Sketch',
-    info: 'A simple and fun pixel sketch app with a variety of drawing tools.',
-    tools: 'Built with: JavaScript, CSS and HTML',
-    github: 'https://github.com/ipeng5/etch-a-sketch',
-    live: 'https://ipeng5.github.io/etch-a-sketch',
-  },
 ];
 
 // Render projects
 const renderProjects = (() => {
   const container = document.querySelector('#project-container');
-  projects.map(p => container.insertAdjacentHTML('beforeend', generateMarkUp(p)));
+  projects.map(p =>
+    container.insertAdjacentHTML('beforeend', generateMarkUp(p))
+  );
 })();
 
 function generateMarkUp(p) {
