@@ -41,6 +41,14 @@ window.onscroll = function () {
 // Project data
 const projects = [
   {
+    img: 'assets/yum.png',
+    name: 'Yum Book',
+    info: 'A recipe book app that allows users to find new recipes (consuming API) or upload and manage (edit/delete) their own recipes (Firebase authentication, Firestore & storage).',
+    tools: 'Built with: Next.js, Tailwind CSS, Framer Motion and HeadlessUI',
+    github: 'https://github.com/ipeng5/yum-book',
+    live: 'https://yum-book.vercel.app/',
+  },
+  {
     img: 'assets/shop.png',
     name: 'Me Fashion',
     info: `Me Fashion is an e-commerce shopping website that allows users to browse and order products.`,
@@ -56,14 +64,7 @@ const projects = [
     github: 'https://github.com/ipeng5/todo',
     live: 'https://todo-list-today.netlify.app/',
   },
-  {
-    img: 'assets/cv.png',
-    name: 'CV Builder',
-    info: 'A CV Builder that allows users to create their own resume and download it. 3 color themes available.',
-    tools: 'Built with: React, CSS and HTML',
-    github: 'https://github.com/ipeng5/cv-application',
-    live: 'https://ipeng5.github.io/cv-application/',
-  },
+
   {
     img: 'assets/weather.png',
     name: 'My Sky',
