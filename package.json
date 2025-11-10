@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ipeng5/portfolio#readme",
   "dependencies": {
+    "braces": "^3.0.3",
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
