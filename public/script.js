@@ -147,3 +147,14 @@ allHidden.forEach((el) => {
 // Footer
 const footer = document.querySelector("footer");
 footer.innerHTML = `&#169;&nbsp;${new Date().getFullYear()}&nbsp;&nbsp;Ian Peng`;
+
+// Clear contact form after successful Formspree submission
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector('form[action^="https://formspree.io/"]');
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      // Wait for Formspree to process, then clear if successful
+      setTimeout(() => form.reset(), 500);
+    });
+  }
+});
