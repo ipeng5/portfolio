@@ -41,6 +41,14 @@ window.onscroll = function () {
 // Project data
 const projects = [
   {
+    img: "assets/notas.png",
+    name: "Notas",
+    info: "Notas is a fast, serverless note-taking app that lets you create, edit, and organize notes instantly. Built as a full stack project with scalable cloud infrastructure.",
+    tools: "Built with: TypeScript, SST, AWS Lambda, DynamoDB, React, Vite, and Tailwind CSS",
+    github: "https://github.com/ipeng5/notas",
+    live: "https://d1dob69eamq7ei.cloudfront.net/",
+  },
+  {
     img: "assets/expnza.png",
     name: "Expnza",
     info: "A full-stack personal spending tracker that allows users to track expenses and income with detailed categories, visual charts and analytics, and Excel export functionality.",
@@ -63,23 +71,6 @@ const projects = [
     tools: "Built with: React, Sass, and Framer Motion",
     github: "https://github.com/ipeng5/me-fashion",
     live: "https://ipeng5.github.io/me-fashion",
-  },
-  {
-    img: "assets/todo.png",
-    name: "todo",
-    info: "A todo list app that lets users easily organize their projects and tasks. Available also in dark mode.",
-    tools: "Built with: JavaScript, Sass and HTML",
-    github: "https://github.com/ipeng5/todo",
-    live: "https://todo-list-today.netlify.app/",
-  },
-
-  {
-    img: "assets/weather.png",
-    name: "My Sky",
-    info: "My Sky is a weather forecast site that provides users with information based on their location or search results.",
-    tools: "Built with: JavaScript, Sass and HTML",
-    github: "https://github.com/ipeng5/my-sky",
-    live: "https://mysky.netlify.app/",
   },
 ];
 
@@ -153,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector('form[action^="https://formspree.io/"]');
   if (form) {
     form.addEventListener("submit", function (e) {
-      // Wait for Formspree to process, then clear if successful
       setTimeout(() => form.reset(), 500);
     });
   }
